@@ -1,65 +1,47 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Layout from "../Components/Layaout/Layout"
+import Link from 'next/link'
+import CardsP from "../Components/cardsP/cardsP"
+import Skills from "../Components/Skills/Skills"
+import About from "../Components/Info/About"
+import Contact from "../Components/Info/Contact"
+import React, { useContext,useState } from 'react'
+
+
 
 export default function Home() {
+ 
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      
+      <Layout >
+        <div className="bgr">
+          <div className="container fondo">
+          <About></About>
+          </div>
+          <div className="container fondo"> 
+            <div className="row"> 
+              <div className="col-md-4 container-contact">
+                <Contact></Contact>
+              </div>
+              <div className="col-md-8 container-skill">
+                <Skills></Skills>
+              </div>
+            </div>
+          { /* <CardsP></CardsP> */}
+          </div>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      </Layout>
     </div>
   )
 }
+/*
+<Link href="pag3">
+<a >USE TP </a>
+</Link>
+*/ 
