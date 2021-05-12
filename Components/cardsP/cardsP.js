@@ -5,8 +5,8 @@ import Button from 'react-bootstrap/Button';
 
 const CardsP = () => {
   const data = [
-    { title: "Hotel-Angular", descS: "Una aplicación web diseñada para la gestión de un hotel creada con el fin de aprendizaje ", descE: "Is a web application developed to the management of the hotel for educational purposes", imgURL: "/Hotel-Angular.png",video:"/primera.mp4" },
-    { title: "Venta", descS: "Un sitio web dinámico creado para administración de ventas de una pequeña empresa", descE: "dynamic Website made to manage the sales of a startup business for educational purposes", imgURL: "/venta.png",video:"/Ventas.mp4" },
+    { title: "Hotel-Angular", descS: "Una aplicación web diseñada para la gestión de un hotel creada con el fin de aprendizaje ", descE: "Is a web application developed to the management of the hotel for educational purposes.", imgURL: "/Hotel-Angular.png",video:"/primera.mp4" },
+    { title: "Venta", descS: "Un sitio web dinámico creado para administración de ventas de una pequeña empresa", descE: "dynamic Website made to manage the sales of a startup business for educational purposes.", imgURL: "/venta.png",video:"/Ventas.mp4" },
     { title: "Venta-Ionic", descS: "Adaptación de una aplicación web a aplicación móvil con tecnologías diferentes", descE: "using new and innovative technologies i created an a mobile application base on a website", imgURL: "/venta-Ionic.png",video:"/celular1.mp4" }
   ]
   const MyContext = useContext(Context)
