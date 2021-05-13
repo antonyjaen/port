@@ -2,7 +2,7 @@
   "name": "portafolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://antonyjaen.github.io/Port",
+  "homepage": "https://antonyjaen.github.io/port",
   "scripts": {
     
     "dev": "next dev",
