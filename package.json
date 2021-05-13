@@ -2,14 +2,12 @@
   "name": "portafolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://antonyjaen.github.io/Portfolio",
+  "homepage": "https://antonyjaen.github.io/Port",
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "exports":"next exports && touch out/.nojekyll"
+    "start": "next start"
   },
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.0.1",
