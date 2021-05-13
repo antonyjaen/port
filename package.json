@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "https://antonyjaen.github.io/port",
   "scripts": {
-    
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
@@ -16,7 +15,8 @@
     "lottie-web": "^5.7.6",
     "next": "10.0.7",
     "react": "17.0.1",
-    "react-bootstrap": "^1.5.1",
+    "react-bootstrap": "^1.6.0",
+    "react-bootstrap-validation": "^0.1.11",
     "react-dom": "17.0.1",
     "react-lottie": "^1.2.3"
   }
