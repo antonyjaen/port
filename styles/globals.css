@@ -20,7 +20,7 @@ body {
   overflow: hidden;
 }
 .Image{
- width: 20rem;
+ width: 22rem;
  height: 16rem;
  transform: scale(1);
  transition: all 0.2s ease-in-out;
