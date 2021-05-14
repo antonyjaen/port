@@ -1,5 +1,4 @@
 
-import Card from 'react-bootstrap/card';
 
 const CardP = ({ title, desc, imgURL, children }) => {
 
