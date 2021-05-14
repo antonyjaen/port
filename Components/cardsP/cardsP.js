@@ -32,7 +32,7 @@ const CardsP = () => {
               data.map(i => (
                 <div className="col-md-4 pt-3 pb-3">
                   <CardP title={i.title} desc={i.descE} imgURL={i.imgURL}>
-                    <Button onClick={()=> {showV(true,i.video)}} className="mt-2" variant="success">More about it</Button>
+                    <Button onClick={()=> {showV(true,i.video)}} className="mt-2" variant="success">More about it.</Button>
                   </CardP>
                 </div>
               ))
