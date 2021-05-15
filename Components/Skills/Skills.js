@@ -16,7 +16,7 @@ const Skills = ()=>{
         
     ]
     return (
-        <div className="container skills">
+        <div className="container ">
             <div className="row">
                 {data.map( s =>(
                         <Skill key={s.name} name={s.name} imgURL={s.imgURL}></Skill>

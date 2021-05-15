@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import Context from "../Context/Context";
 import CardP from "./cardP"
 import Button from 'react-bootstrap/Button';
+import ReactPlayer from 'react-player'
 
 const CardsP = () => {
   const data = [
@@ -21,9 +22,13 @@ const CardsP = () => {
       {show ?
         <div className="Video-desc" >
           <h1 onClick={()=> {showV(false)}} >X</h1>
-          <div className="ratio ratio-21x9 vid" >
-            <iframe src={video} className="vid" title="YouTube video" allowfullscreen></iframe>
+          <div className="vid">
+          <ReactPlayer width="100%" height="100%" playing={true} controls={true} url={video} />
           </div>
+          {/*<div className="ratio ratio-21x9 vid" >
+            <h1 className="phone">X</h1>
+            <iframe src={video} className="vid" title="YouTube video" allowfullscreen></iframe>
+      </div>*/}
         </div>
         :
         <div className="container fondo">
