@@ -25,10 +25,6 @@ const CardsP = () => {
           <div className="vid">
           <ReactPlayer width="100%" height="100%" playing={true} controls={true} url={video} />
           </div>
-          {/*<div className="ratio ratio-21x9 vid" >
-            <h1 className="phone">X</h1>
-            <iframe src={video} className="vid" title="YouTube video" allowfullscreen></iframe>
-      </div>*/}
         </div>
         :
         <div className="container fondo">
