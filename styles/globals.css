@@ -178,8 +178,8 @@ img {
 }
 
 .skill img{
-  width: 12rem;
-  height: 10rem;
+  width: 11rem;
+  height: 8rem;
   transform: scale(1);
   transition: all 0.2s ease-in-out;
 }
