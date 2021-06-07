@@ -235,5 +235,10 @@ img {
   z-index: 200;
   margin-left: 90%;
 }
-
+.Image{
+  width: 24rem;
+  height: 18rem;
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+ }
 }
