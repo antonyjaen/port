@@ -22,7 +22,7 @@ import node from "../imgs/node.json"
 import downArrow from "../imgs/arrow-down.json"
 import SvgRocket from ".//SvgRocket"
 
-
+import { useMediaQuery } from 'react-responsive'
 
 function Home() {
 
@@ -32,11 +32,7 @@ function Home() {
  },[])
 
 
- const options = {
-  animationData: reactJson,
-  loop: true,
-  autoplay: true,
-};
+
 const { scrollYProgress } = useViewportScroll()
 const { y } = useTransform(scrollYProgress, [0, 0.5, 1], [0, 0, 1])
   return (
@@ -68,7 +64,7 @@ const { y } = useTransform(scrollYProgress, [0, 0.5, 1], [0, 0, 1])
         </pre>
       </div>
     
-              <img  className="tree" src="./Footer-1.png" />
+          
     
      <div ></div>
      <motion.div style={{ marginLeft:"-5%",marginTop:'20%'}} className="rocket" transition={{duration:3}} 
@@ -85,10 +81,11 @@ const { y } = useTransform(scrollYProgress, [0, 0.5, 1], [0, 0, 1])
     
     </section>
     <section className="container-start" >
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-  <path fill="#1c3a4e"  d="M0,128L40,117.3C80,107,160,85,240,69.3C320,53,400,43,480,69.3C560,96,640,160,720,170.7C800,181,880,139,960,122.7C1040,107,1120,117,1200,138.7C1280,160,1360,192,1400,208L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
-</svg>
-       <div className="skills lax lax_preset_slideX:961:656" >
+        <img className="tree" src="./Footer-1.png" />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#1c3a4e" d="M0,128L40,117.3C80,107,160,85,240,69.3C320,53,400,43,480,69.3C560,96,640,160,720,170.7C800,181,880,139,960,122.7C1040,107,1120,117,1200,138.7C1280,160,1360,192,1400,208L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+        </svg>
+       <div className="skills lax lax_preset_slideX:961:150" >
           <div className="area "  >
             <div className="lax lax_preset_seesaw:140:10" >  <img style={{width:'250px',height:'200px'}} src="https://sithus.com/images/frontBack.png" /></div>
            

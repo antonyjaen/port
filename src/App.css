@@ -22,13 +22,15 @@
  
 }
 .container-start:nth-of-type(1) {
-  height: 80vh;
+  height: 72vh;
   background-color : var(--color-1);
   color: var(--color-4);
+  border: 10px solid  var(--color-1);
 }
 
 .container-start:nth-of-type(2) {
   background-color: var(--color-1);
+  
 }
 
 .container-start:nth-of-type(3) {
@@ -82,7 +84,6 @@
 
 .skills{
     width: 80%;
-    margin-left: -25%;
     margin-top: -5%;
     margin-bottom: 10%;
     background-color: rgba(52, 51, 51, 0.198);
@@ -114,8 +115,7 @@
 }
 
 .tree{  
-  height: 20vw;
-  width: 100vw;
+  width: 102vw;
   object-fit: cover;
   z-index: 1;
   object-position: center center;
@@ -162,6 +162,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .introduction{
+  margin-top: 20vh;
   width: 100%;
   height: 100%;
   align-self: center;
@@ -174,26 +175,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Cellphone viewport*/
-@media screen and (max-width: 400px) {
-  .skills{
-    margin-left: -153%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .skills{
-    margin-left: -160%;
-  }
 
-}
-@media screen and (max-width: 360px) {
+@media  (max-width: 912px) {
   .skills{
-    margin-left: -168%;
+    margin-left: -7%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
   }
-
-}
-@media screen and (max-width: 912px) {
-  .skills{
-    margin-left: -53%;
+  
+  .area{
+    width: 100%;
   }
   .introduction{
     margin-top: 50vh;
@@ -216,8 +209,8 @@ body::-webkit-scrollbar-thumb {
     scroll-snap-align: start;
   }
   .skills{
+    margin-left: -29%;
     
-
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
@@ -232,7 +225,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .introduction{
-    margin-top: 50vh;
+    margin-top: 35vh;
     margin-right: 3%;
   }
 
