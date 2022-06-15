@@ -22,7 +22,7 @@
  
 }
 .container-start:nth-of-type(1) {
-  height: 100vh;
+  height: 80vh;
   background-color : var(--color-1);
   color: var(--color-4);
 }
