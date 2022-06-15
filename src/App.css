@@ -4,7 +4,7 @@
   --color-2:#495970;
   --color-3:#73a8d0;
   --color-4:rgb(214, 202, 202);
-  --tree: #192128;
+  --tree: #1f3d54;
 }
 
 .main-container{
@@ -35,7 +35,7 @@
   background-color: var(--color-1);
 }
 .span-animated {
-  margin-left: 28%;
+  margin-left: 36%;
   width: 8ch;
   height: 60px;
   margin-top: 0%;
@@ -114,14 +114,12 @@
 }
 
 .tree{  
-  height: 50vh;
+  height: 20vw;
   width: 100vw;
-  background-size: 100%;
-  background-image:  linear-gradient(to bottom, rgba(25, 25, 27, 0.52), rgba(21, 22, 23, 0.73)),url("https://www.murray.senate.gov/wp-content/uploads/2021/10/Footer-1.png");
-  background-repeat: no-repeat;
+  object-fit: cover;
   z-index: 1;
+  object-position: center center;
   margin-top: 1%;
-  position: absolute;
   bottom: 0;
 }
 .rocket{
@@ -175,86 +173,79 @@ body::-webkit-scrollbar-thumb {
   padding-top: 2%;
 }
 
-  @media (max-width: 768px) {
+/* Cellphone viewport*/
+@media screen and (max-width: 400px) {
+  .skills{
+    margin-left: -153%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .skills{
+    margin-left: -160%;
+  }
+
+}
+@media screen and (max-width: 360px) {
+  .skills{
+    margin-left: -168%;
+  }
+
+}
+@media screen and (max-width: 912px) {
+  .skills{
+    margin-left: -53%;
+  }
+  .introduction{
+    margin-top: 50vh;
+    margin-right: 3%;
+  }
+
+  .introduction  h1  {
+    font-size: 40px;
+  }
+  .introduction  h3  {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-start{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    scroll-snap-align: start;
+  }
+  .skills{
     
-    .skills{
-        
-        width: 80%;
-        margin-left: -123%;
-        margin-bottom: 10%;
-        margin-top: 55%;
-        background-color: rgba(52, 51, 51, 0.198);
-        border: 4px solid var(--color-1);
-        border-radius: 24px;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 1fr;
-        margin-bottom: 10%;
-    }
-    .area{
-      margin-bottom: 5%;
-    }
-    .tree{
-      height: 17vh;
-        width: 100vw;
-    }
 
-    .introduction{
-      margin-top: 65%;
-    }
-
-    .introduction  h1  {
-      font-size: 40px;
-    }
-    .introduction  h3  {
-      font-size: 30px;
-    }
-
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .area{
+    padding-top: 5%;
   }
 
-  @media (max-width: 1200px) {
-  
-    .tree{
-      height: 30vh;
-      width: 100vw;
-    }
+  .span-animated{
+    margin-left: 25%;
+  }
 
+  .introduction{
+    margin-top: 50vh;
+    margin-right: 3%;
+  }
+
+  .introduction  h1  {
+    font-size: 40px;
+  }
+  .introduction  h3  {
+    font-size: 30px;
   }
 
   
-    @media (max-width: 375px) {
-  
-      .skills {
-  
-        width: 80%;
-        margin-left: -163%;
-  
-      }
+}
 
-      .tree{
-        height: 14vh;
-        width: 102vw;
-      }
-  
-    }
-  
-    @media (max-width: 360px) {
-  
-      .skills {
-  
-        width: 80%;
-        margin-left: -168%;
-  
-      }
-  
-    }
-    @media (max-width: 320px) {
-  
-      .skills {
-  
-        width: 80%;
-        margin-left: -193%;
-  
-      }
-  
-    }
+
+
+
