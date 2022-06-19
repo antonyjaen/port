@@ -43,7 +43,7 @@ export const Projects = () => {
        <div className="img-wrapper">
           <img style={{ width: '100%', height: '300px' }} src="./ANGULAR.png" />
         </div>
-        <h2  >EXP</h2>
+        <h2  >E.G.</h2>
        </div>
 
     </div>
