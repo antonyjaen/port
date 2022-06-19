@@ -1,4 +1,4 @@
-import { useState,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useParallax } from 'react-scroll-parallax'
 import { ParallaxProvider } from "react-scroll-parallax"
 import ParticlesBg from 'particles-bg'
@@ -24,10 +24,11 @@ import { Star } from './components/Star';
 import { Rocket } from './components/rocket';
 import { Introduction } from './components/Introduction';
 import { Skills } from './components/Skills';
+import { Projects } from './components/Projects';
 
-
-const skills ={
-  "front-end" : [
+import { PopupWidget } from "react-calendly";
+const skills = {
+  "front-end": [
     "React",
     "Angular",
     "Next",
@@ -35,7 +36,7 @@ const skills ={
     "HTML",
     "ES6"
   ],
-  "back-end" : [
+  "back-end": [
     "Express",
     "MongoDB",
     "Prisma",
@@ -43,10 +44,10 @@ const skills ={
     "Python",
     "TypeScript"
   ],
-  "dev-ops" : [
+  "dev-ops": [
     "Git",
     "GitFlow",
-    "Docker",,
+    "Docker", ,
     "Heroku",
     "CI/CD",
     "jenkins",
@@ -55,19 +56,15 @@ const skills ={
 
 function Home() {
 
- // const [date, setDate] = useState(new Date());
- useEffect(()=>{
-  
- },[])
 
   return (
     <div className="home">
 
-    <section className="container-start " >
-      <Star/>
-      <Introduction/>
-      <Rocket/>
-    </section>
+      <section className="container-start " >
+        <Star />
+        <Introduction />
+        <Rocket />
+      </section>
 
       <section className="container-start" >
         <img className="tree" src="./Footer-1.png" />
@@ -75,13 +72,28 @@ function Home() {
           <path fill="#1c3a4e" d="M0,128L40,117.3C80,107,160,85,240,69.3C320,53,400,43,480,69.3C560,96,640,160,720,170.7C800,181,880,139,960,122.7C1040,107,1120,117,1200,138.7C1280,160,1360,192,1400,208L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
         </svg>
       </section>
-  
+
       <section className="container-start" >
-      <Skills skills={skills}/>
+        <Skills skills={skills} />
       </section>
+
+      <section className="container-start" >
+      <Projects/>
+      </section>
+
+      < PopupWidget url="https://calendly.com/antonyjaen/30min?"  rootElement={document.getElementById("root")}
+        text="Click here to schedule!"
+        textColor="white"
+        color="black" 
+        />
+
+    
+    
+
 
     </div>
   )
 }
 
 export default Home
+ 
