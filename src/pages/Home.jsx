@@ -21,7 +21,7 @@ import solidityJson from "../imgs/solidity.json"
 import node from "../imgs/node.json"
 import downArrow from "../imgs/arrow-down.json"
 import { Star } from './components/Star';
-import { Rocket } from './components/rocket';
+import { Rocket } from './components/Rocket';
 import { Introduction } from './components/Introduction';
 import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
