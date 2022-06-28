@@ -20,13 +20,14 @@ import gitJson from "../imgs/git.json"
 import solidityJson from "../imgs/solidity.json"
 import node from "../imgs/node.json"
 import downArrow from "../imgs/arrow-down.json"
-import { Star } from './components/Star';
-import { Rocket } from './components/Rocket';
-import { Introduction } from './components/Introduction';
-import { Skills } from './components/Skills';
-import { Projects } from './components/Projects';
-
+import { Star } from '../components/Star';
+import { Rocket } from '../components/Rocket';
+import { Introduction } from '../components/Introduction';
+import { Skills } from '../components/Skills';
+import { Projects } from '../components/Projects';
+import ModalVideo from 'react-modal-video'
 import { PopupWidget } from "react-calendly";
+import { VideoModal } from '../components/VideoModal';
 const skills = {
   "front-end": [
     "React",
@@ -55,11 +56,14 @@ const skills = {
 }
 
 function Home() {
-
-
+  const [isOpen, setOpen] = useState(false);
+  const [videoURL,setVideoURL] = useState('');
   return (
     <div className="home">
-
+      {
+        isOpen &&  <VideoModal setOpen={setOpen} url={videoURL} ></VideoModal>
+      }
+       
       <section className="container-start " >
         <Star />
         <Introduction />
@@ -78,7 +82,7 @@ function Home() {
       </section>
 
       <section className="container-start" >
-      <Projects/>
+      <Projects setOpen={setOpen} setVideoURL ={setVideoURL}/>
       </section>
 
       < PopupWidget url="https://calendly.com/antonyjaen/30min?"  rootElement={document.getElementById("root")}
