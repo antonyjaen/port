@@ -179,12 +179,12 @@
   /*scale*/
   transform: scale(1.01);
   transition: transform 0.5s;
-  border: 1px solid rgba(0, 0, 0, 0.237);
+  border: 1px solid #2d2d2d50;
   background-color: rgba(52, 51, 51, 0.198);
 
 }
 .area:hover > .skill-title{
-  border-bottom: rgb(57, 136, 200) solid 2px;
+  border-bottom: rgb(210, 217, 222) solid 2px;
 }
 
 .area:hover > img{
@@ -192,8 +192,14 @@
   transition: transform 0.5s;
 }
 
-.skill-title{
- 
+.star{
+ height: 20px;
+  width: 20px;
+   margin-top: 5%;
+   margin-left: 80%;
+   background-color: color;
+   position: absolute;
+   clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%) ;
 }
 
 .tree{  
@@ -343,15 +349,63 @@ body::-webkit-scrollbar-thumb {
   }
 
   .introduction  h1  {
-    font-size: 40px;
-  }
-  .introduction  h3  {
     font-size: 30px;
   }
+  .introduction  h3  {
+    font-size: 35px;
+  }
 
-  
+  .start{
+    margin-top: 35%;
+  }
 }
 
 
 
 
+/* Toggle Theme btn*/
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 60px;
+  height: 26px;
+  background-color:#111;
+  display: flex;
+  border-radius:50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+  margin: 1% 2% 1% 2%;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball{
+  transform: translateX(32px);
+}
+
+
+.fa-moon {
+  color: rgb(39, 121, 228);
+}
+
+.fa-sun {
+  color: rgb(208, 120, 38);
+}

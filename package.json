@@ -24,6 +24,7 @@
     "react-router-dom": "^6.2.2",
     "react-scroll-parallax": "^3.2.0",
     "react-transition-group": "^4.4.1",
+    "react-vertical-timeline-component": "^3.5.2",
     "react-vivus": "^0.0.2",
     "react-wow": "^1.0.0",
     "vivus": "^0.4.6",
