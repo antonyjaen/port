@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 import { Rocket } from '../components/Rocket';
 import { Introduction } from '../components/Introduction';
@@ -7,7 +6,7 @@ import { Skills } from '../components/Skills';
 import { Projects } from '../components/Projects';
 import { PopupWidget } from "react-calendly";
 import { VideoModal } from '../components/VideoModal';
-import { Timeline } from '../components/Timeline';
+import { Timeline } from './../components/Timeline';
  
 
 const skills = {
