@@ -6,7 +6,7 @@ import { Skills } from '../components/Skills';
 import { Projects } from '../components/Projects';
 import { PopupWidget } from "react-calendly";
 import { VideoModal } from '../components/VideoModal';
-import { Timeline } from './../components/Timeline';
+import { Timeline } from '../components/timeline';
  
 
 const skills = {
