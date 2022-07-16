@@ -8,7 +8,7 @@ import { Projects } from '../components/Projects';
 import { PopupWidget } from "react-calendly";
 import { VideoModal } from '../components/VideoModal';
 import { Timeline } from '../components/Timeline';
-
+ 
 
 const skills = {
   "front-end": [
@@ -47,7 +47,7 @@ function Home() {
     'Blue' : {
       tree: 'Tree-Blue.png', 
       color: '#1c3a4e'
-    },
+    }, 
     "Red" : {
       tree: 'Tree-Red.png', 
       color: '#7c342b'
