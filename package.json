@@ -28,6 +28,7 @@
     "react-vertical-timeline-component": "^3.5.2",
     "react-vivus": "^0.0.2",
     "react-wow": "^1.0.0",
+    "usehooks-ts": "^2.6.0",
     "vivus": "^0.4.6",
     "wouter": "^2.8.0-alpha.2",
     "wowjs": "^1.1.3"
