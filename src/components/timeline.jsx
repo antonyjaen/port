@@ -16,8 +16,8 @@ export const Timeline = ({color}) => {
       title: "6 Years "
     }
   ];
-  return ( <div style={{ width: "90%", height: "1000px",marginLeft:"5%" }}>
-  <Chrono items={items} mode={ width > 600 ? "VERTICAL_ALTERNATING" : "VERTICAL"} 
+  return ( <div style={{ width: "90%", height: "1300px",marginLeft:"5%" }}>
+  <Chrono scrollable={false} items={items} mode={ width > 600 ? "VERTICAL_ALTERNATING" : "VERTICAL"} 
   
     buttonTexts={{
       first: null,
