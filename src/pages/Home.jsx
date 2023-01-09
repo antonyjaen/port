@@ -4,7 +4,7 @@ import { Rocket } from '../components/Rocket';
 import { Introduction } from '../components/Introduction';
 import { Skills } from '../components/Skills';
 import { Projects } from '../components/Projects';
-import { PopupWidget } from "react-calendly";
+import { PopupWidget, InlineWidget } from "react-calendly";
 import { VideoModal } from '../components/VideoModal';
 import { Timeline } from '../components/timeline';
  
@@ -75,7 +75,7 @@ function Home() {
       }
       
       <section className="container-start " >
-        {/*Theme Toggle*/ }
+        {/*Theme Toggl
         <div style={{position: 'absolute',right: '30px',top:'27px'}} onClick={  changeTheme }>
           <input type="checkbox" className="checkbox"  checked={ (theme != 'Blue') } />
           <label className="label">
@@ -83,7 +83,7 @@ function Home() {
             <i className='fas fa-sun'></i>
             <div className='ball'></div>
           </label>
-        </div>
+        </div>e*/ }
         <Introduction />
         <Rocket />
       </section>
@@ -112,11 +112,6 @@ function Home() {
         textColor="white"
         color="black" 
         />
-
-    
-    
-
-
     </div>
   )
 }
