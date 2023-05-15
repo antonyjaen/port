@@ -42,36 +42,46 @@ export const Timeline = ({color}) => {
       titleColorActive: 'white',
     } 
     }>
-        <div>
-        <h3 style={{color : (color == '#1c3a4e' ? '#336484': color ), fontSize: (width > 600 ? "2.2em" : "1.5em")}}> QA Automation </h3>
-        <p style={{color: 'white'}} >
-
-            Create an automated solution to QA process with tools like Cypress, browserstack, selenium and appium
-        </p>
-      </div>
-
       <div>
-        <h3 style={{color : (color == '#1c3a4e' ? '#336484': color ), fontSize: (width > 600 ? "2.2em" : "1.5em")}}> Fullstack</h3>
-        <p style={{color: 'white'}} >
-          <span style={{color: 'white'}}> Creating a project from
-        scratch with new technologies      </span>
-            <br/>
-        
-                  React, Express, Prisma ORM,
-              PostgreSQL,Git,Github and
-              AWS EC2
-        </p>
-      </div>
-
-      <div>
-        <h3 style={{color : (color == '#1c3a4e' ? '#336484': color ), fontSize: (width > 600 ? "2.2em" : "1.5em")}}>Middle Technician </h3>
-        <p style={{color: 'white'}} >
-         
-          Colegio Técnico Profesional Mercedes Norte. Middle Technician In Software Development and Certificate in Junior Achievement Costa Rica and IBM - Start Up Challenge
-
+        <h3 style={{ color: (color == '#1c3a4e' ? '#336484' : color), fontSize: (width > 600 ? "2.2em" : "1.5em") }}>Fullstack </h3>
+        <p style={{ color: 'white' }} >
+        Create portal from scratch with technologies like React, Next, Prisma ORM, MySQL ,Git, Github and deployed in VPS server using NGINX
           
         </p>
       </div>
+
+      <div>
+        <h3 style={{ color: (color == '#1c3a4e' ? '#336484' : color), fontSize: (width > 600 ? "2.2em" : "1.5em") }}> QA Automation </h3>
+        <p style={{ color: 'white' }} >
+
+          Create an automated solution to QA process with tools like Cypress, browserstack, selenium and appium
+        </p>
+      </div>
+
+      <div>
+        <h3 style={{ color: (color == '#1c3a4e' ? '#336484' : color), fontSize: (width > 600 ? "2.2em" : "1.5em") }}> Fullstack</h3>
+        <p style={{ color: 'white' }} >
+          <span style={{ color: 'white' }}> Creating a project from
+            scratch with new technologies      </span>
+          <br />
+
+          React, Express, Prisma ORM,
+          PostgreSQL,Git,Github and
+          AWS EC2
+        </p>
+      </div>
+
+      <div>
+        <h3 style={{ color: (color == '#1c3a4e' ? '#336484' : color), fontSize: (width > 600 ? "2.2em" : "1.5em") }}>Middle Technician </h3>
+        <p style={{ color: 'white' }} >
+
+          Colegio Técnico Profesional Mercedes Norte. Middle Technician In Software Development and Certificate in Junior Achievement Costa Rica and IBM - Start Up Challenge
+
+
+        </p>
+      </div>
+
+      
   </Chrono>
 </div>
   )
