@@ -7,7 +7,9 @@
   --color-4:rgb(214, 202, 202);
   --tree: #1f3d54;
 }
-
+ body{
+  background-color: #18191d;
+}
 .main-container{
     display: flex;
     flex-direction: column;
@@ -408,3 +410,5 @@ body::-webkit-scrollbar-thumb {
 .fa-sun {
   color: rgb(208, 120, 38);
 }
+
+

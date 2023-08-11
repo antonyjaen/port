@@ -5,10 +5,9 @@ const projects=
   ['TTS','./TTS-LOGIN.png', './TTS.mp4'],
   ['QAA','./QAA-REPORT.png', './QAA.mp4'],
   ['CI/CD','./CI-CD.png', './SS.mp4'],
-  ['FTB','./FORNITURE.png',false],
   ['E.G.', "./ANGULAR.png" ,'./primera.mp4'],
-  ['IONIC', './IONIC.png','./IonicApp.mp4']
-
+  ['IONIC', './IONIC.png','./IonicApp.mp4'],
+  ['EP', './EP.png','./EP.mp4']
 ]
 
 export const Projects = ({setVideoURL , setOpen}) => {
