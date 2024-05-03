@@ -6,7 +6,6 @@ function App() {
    
       <div className="App">
       <div className="main-container" >
-      <Home></Home>
       </div>
     </div>
   )
