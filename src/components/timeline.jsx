@@ -4,13 +4,13 @@ import { useWindowSize } from 'usehooks-ts'
 
 const timelineItems = [
   {
-    title: "Full-stack",
+    title: "Full-stack (MERN)",
     duration: "1 year and 10 months",
     subtitle: "Part-time developer for an electricity startup",
     details: "Create portal from scratch with technologies like React, Next, Prisma ORM, MySQL, Git, Github and deployed in VPS server using NGINX.",
     bullets: [
-      "Developed front-end and back-end components for a startup's web portal",
-      "Deployed applications on VPS server with NGINX"
+      "Built full-stack applications using modern technologies",
+      "Deployed applications on AWS EC2 instances"
     ]
   },
   {
@@ -24,17 +24,17 @@ const timelineItems = [
     ]
   },
   {
-    title: "Fullstack",
-    duration: "9 months",
-    subtitle: "",
-    details: "Creating a project from scratch with new technologies: React, Express, Prisma ORM, PostgreSQL, Git, Github and AWS EC2.",
+    title: "Full-stack (.NET)",
+    duration: "1 year and 4 months",
+    subtitle: "With technologies .NET, TFS, and SQL Server",
+    details: "Utilizing technologies .NET, TFS, and SQL Server to develop fullstack applications for a healthcare company.",
     bullets: [
-      "Built full-stack applications using modern technologies",
-      "Deployed applications on AWS EC2 instances"
+      "Developed fullstack applications for a healthcare company",
+      "Utilized .NET, TFS, and SQL Server for development"
     ]
   },
   {
-    title: "Database Migration",
+    title: "Database Migration (SSIS)",
     duration: "1 year and 4 months",
     subtitle: "Working on ETL process for telecom companies",
     details: "Technologies used: MySQL, SQL Server, Integration Services.",
@@ -44,7 +44,7 @@ const timelineItems = [
     ]
   },
   {
-    title: "Full-stack - Mid Architecture",
+    title: "Full-stack (Flask, PostgreSQL y React)",
     date: "2023/10",
     duration: "2023/10 - Current",
     subtitle: "",
@@ -90,7 +90,7 @@ export const Timeline = ({ color }) => {
         }} 
       >
         {timelineItems.map((item, index) => (
-          <div key={index}>
+          <div key={index} className=" w-[100%]">
             <h3 className="text-sky-200 text-lg md:text-xl">{item.title}</h3>
             {item.duration && (
               <p style={{ color: 'white' }}>Duration: {item.duration}</p>

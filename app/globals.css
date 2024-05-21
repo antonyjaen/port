@@ -85,9 +85,8 @@ body {
 
 .container-start:nth-of-type(5) {
   
-  background-color: red;
   color: var(--color-4);
-  height: 100vh;
+  height: 30vh;
 }
 
 .item {

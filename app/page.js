@@ -24,11 +24,15 @@ const skills = {
   ],
   "back-end": [
     "Express",
+    "SQL Server",
+    "PostgreSQL",
+    "MySQL",
     "MongoDB",
     "Prisma",
-    "PostgreSQL",
     "Python",
-    "TypeScript"
+    "Flask",
+    "Supabase",
+    "TypeScript",
   ],
   "dev-ops": [
     "Git",
@@ -37,6 +41,8 @@ const skills = {
     "Heroku",
     "CI/CD",
     "jenkins",
+    "Azure pipelines",
+    "Git actions"
   ]
 }
 
@@ -71,66 +77,6 @@ function Home() {
     }
 
   },[])
-
-  const [imagesLoaded, setImagesLoaded] = useState(false);
-  const handleImageLoad = () => {
-    setImagesLoaded(true);
-  };
-
-  
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const handleScroll = () => {
-    const scrolledPosition = window.scrollY;
-    
-    const heroElement = document.getElementById('hero');
-    const TimelineElement = document.getElementById('Timeline');
-    const skillsElement = document.getElementById('skills');
-
-    if (!heroElement || !TimelineElement) {
-      return;
-    }
-
-    const heroPosition = heroElement.offsetTop - 800;
-    const TimelinePosition = TimelineElement.offsetTop - 500 ;
-    //const skillsPosition = skillsElement.offsetTop - 200 ;
-    
-    function smoothScrollTo(x, y, duration) {
-      const start = window.scrollY;
-      const change = y - start;
-      const increment = 60; // Ajusta el valor de incremento para controlar la suavidad
-      let currentTime = 0;
-    
-      function animateScroll() {
-        currentTime += increment;
-        const progress = currentTime / duration;
-        const easeInOutProgress = (1 - Math.cos(progress * Math.PI)) / 2;
-        const scrollToY = start + change * easeInOutProgress;
-    
-        window.scrollTo(0, scrollToY);
-    
-        if (currentTime < duration) {
-          requestAnimationFrame(animateScroll);
-        }
-      }
-    
-      animateScroll();
-    }
-    
-    // Llama a la función con las coordenadas x e y deseadas y la duración en milisegundos
-   // smoothScrollTo(0, 500, 1000); // Desplazamiento a x=0, y=500 en 1000ms
-    
-    /*window.scrollTo({
-      top: TimelinePosition,
-      behavior: 'smooth 200ms' // This makes the scrolling smooth
-    });*/
-    //smoothScrollTo(0, TimelinePosition, 2000);
-
-   
-  };
   return (
     
     <div className="App">
@@ -146,9 +92,9 @@ function Home() {
       </section>
 
       <section className="container-start" >
-        <Image className="tree" src={`/${themes[theme].tree}`}  width={'900'} height={200} />
+        <Image className="tree" src={`/${themes[theme].tree}`} alt='no image' width={'900'} height={200} />
    
-        <svg onLoad={handleImageLoad} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className=' w-[100%]  mt-[-1%]' >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className=' w-[100%]  mt-[-1%]' >
           <path fill={themes[theme].color} d="M0,128L40,117.3C80,107,160,85,240,69.3C320,53,400,43,480,69.3C560,96,640,160,720,170.7C800,181,880,139,960,122.7C1040,107,1120,117,1200,138.7C1280,160,1360,192,1400,208L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
         </svg> 
       </section>
@@ -163,13 +109,10 @@ function Home() {
             <Skills skills={skills} theme={theme} />
           </section>
 
-          
-        {/*
         
           <section className="container-start" >
-            <Projects />
+           {/* <Projects />*/}
           </section>
-        */}
           
           
       {/*
